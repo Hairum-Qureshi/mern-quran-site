@@ -11,11 +11,13 @@ export default function Home() {
 					/>
 				</div>
 				<img
-					// src="https://img.freepik.com/premium-photo/holy-quran-black-background_368093-4131.jpg"
 					src="https://img.freepik.com/premium-photo/holy-quran-with-arabic-calligraphy-meaning-al-quran-tasbih-rosary-beads-black-background-selective-focus-copy-space_759200-29.jpg"
 					alt="Background Image"
 					className={home_css["background-image"]}
 				/>
+				<div className={home_css["search-container"]}>
+					<input type="search" placeholder="Search for a chapter" />
+				</div>
 			</div>
 		</>
 	);
