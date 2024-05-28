@@ -20,17 +20,36 @@ body {
 	z-index: 20; /* Ensure it is above the Shahada image */
 	display: flex;
 	justify-content: center;
-	margin-top: 15%; /* Adjust as needed */
+	margin-top: 10%; /* Adjust as needed */
+}
+
+.search-container .search-bar {
+	border: 2px solid white;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.search-container .search-bar span {
+	font-size: 20px;
+	position: absolute;
+	left: 10px; /* Adjust as needed for padding */
 }
 
 .search-container input[type="search"] {
-	width: 100%;
+	width: calc(100% - 20px); /* Adjust based on the span's width + padding */
 	padding: 10px;
-	font-size: 16px;
-	border: 2px solid white;
-	border-radius: 15px;
+	font-size: 17px;
+	border: none;
 	outline: none;
 	box-sizing: border-box;
+	border-radius: 15px;
+	margin-left: 35px; /* Adjust based on the span's width + padding */
 }
 
 .shahada-overlay {

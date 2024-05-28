@@ -1,4 +1,6 @@
 import home_css from "../css/home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
 	return (
@@ -16,7 +18,12 @@ export default function Home() {
 					className={home_css["background-image"]}
 				/>
 				<div className={home_css["search-container"]}>
-					<input type="search" placeholder="Search for a chapter" />
+					<div className={home_css["search-bar"]}>
+						<span>
+							<FontAwesomeIcon icon={faMagnifyingGlass} />
+						</span>
+						<input type="search" placeholder="Search for a chapter" />
+					</div>
 				</div>
 			</div>
 		</>
